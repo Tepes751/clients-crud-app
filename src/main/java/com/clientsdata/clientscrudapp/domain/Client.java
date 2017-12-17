@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class Client {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "client_sequence")
+    @GeneratedValue(strategy=GenerationType.AUTO, generator = "client_sequence")
     @SequenceGenerator(name = "client_sequence")
     private int id;
 
